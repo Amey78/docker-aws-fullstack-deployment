@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Capstone 2</title></head>
+<body style="font-family:sans-serif;text-align:center;margin-top:80px">
+  <h1>Capstone Project 2: Docker on AWS</h1>
+  <h2>Total visits: <span id="count">...</span></h2>
+  <script>
+    fetch('/api/visits').then(r => r.json()).then(d => {
+      document.getElementById('count').innerText = d.visits;
+    });
+  </script>
+</body>
+</html>
